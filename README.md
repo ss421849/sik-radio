@@ -97,11 +97,3 @@ Pipe the receiver's output into the `play` utility (part of the `sox` package) t
 
 ```
 
----
-
-## 🛡️ Robustness & Design Principles
-
-* **Postel's Law Compliant:** Designed defensively to be highly resilient against network jitter, packet reordering, and temporary network dropouts without requiring a restart.
-* **Memory Management:** Memory-heavy structures and queues are dynamically allocated to prevent stack overflows and optimize resource usage.
-* **Error Handling:** Robust command-line argument validation. All invalid parameter formats cause the program to print an error to `stderr` and terminate with exit code `1`.
-* **Code Style:** Developed adhering to high readability standards and industry-accepted patterns (Linux Kernel Coding Style inspiration).
