@@ -53,7 +53,7 @@ Both programs support flexible command-line configuration:
 
 ### Prerequisites
 * GCC or Clang compiler with **C++20** support.
-* CMake (version 3.15 or higher).
+* CMake (version 3.20 or higher).
 
 ### Compilation
 The project uses CMake for a robust cross-platform build system. You can compile both the sender and receiver by running:
