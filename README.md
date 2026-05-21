@@ -51,17 +51,22 @@ Both programs support flexible command-line configuration:
 
 ## 🚀 Building & Running
 
+### Prerequisites
+* GCC or Clang compiler with **C++20** support.
+* CMake (version 3.15 or higher).
+
 ### Compilation
-The project utilizes a standard `Makefile`. Compilation requires GCC with support for `-std=c++20`.
+The project uses CMake for a robust cross-platform build system. You can compile both the sender and receiver by running:
 
 ```bash
-# Build both sender and receiver binaries
-make
+# Create and navigate to the build directory
+mkdir build && cd build
 
-# Clean build artifacts
-make clean
+# Configure the project
+cmake ..
 
-```
+# Build the binaries
+cmake --build .
 
 ### Example Usage
 
